@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Practice SaaS landing page concept by Nguyen Thanh Dat built with HTML, CSS, and vanilla JavaScript."
+    />
+    <title>SaaS Landing Page Concept | Nguyen Thanh Dat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="./index.html#home" aria-label="Back to portfolio home">
+          <span class="brand-mark">ND</span>
+          <span>
+            <strong>Nguyen Thanh Dat</strong>
+            <small>SaaS Landing Concept</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+          <a href="#problem">Problem</a>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it Works</a>
+          <a href="#pricing">Pricing</a>
+          <a class="nav-button" href="./index.html#projects">Portfolio</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="saas-hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Practice / Concept Project</p>
+            <h1>Customer support software for calmer, faster team replies.</h1>
+            <p class="hero-text">
+              QueuePilot is a fictional SaaS landing page concept for small
+              support teams that need one shared inbox, clear ownership, and
+              simple service-level visibility.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#pricing">View Plans</a>
+              <button class="button button-secondary" type="button" data-cta-feedback="Demo signup action selected. This is a static concept project.">Request Demo</button>
+            </div>
+            <p class="cart-feedback" data-global-feedback aria-live="polite"></p>
+            <ul class="saas-proof-list" aria-label="Concept page highlights">
+              <li>No framework</li>
+              <li>Responsive sections</li>
+              <li>Vanilla JavaScript FAQ</li>
+            </ul>
+          </div>
+
+          <aside class="dashboard-card reveal reveal-delay" aria-label="SaaS dashboard preview">
+            <div class="dashboard-topbar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="dashboard-stat-grid">
+              <span><strong>24</strong> open tickets</span>
+              <span><strong>92%</strong> SLA health</span>
+              <span><strong>8</strong> saved replies</span>
+              <span><strong>3</strong> active agents</span>
+            </div>
+            <div class="dashboard-ticket-list">
+              <div>
+                <span>Billing question</span>
+                <strong>High</strong>
+              </div>
+              <div>
+                <span>Trial onboarding</span>
+                <strong>New</strong>
+              </div>
+              <div>
+                <span>Feature request</span>
+                <strong>Open</strong>
+              </div>
+            </div>
+            <div class="dashboard-chart" aria-hidden="true">
+              <span style="height: 44%;"></span>
+              <span style="height: 66%;"></span>
+              <span style="height: 52%;"></span>
+              <span style="height: 78%;"></span>
+              <span style="height: 88%;"></span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="problem">
+        <div class="container two-column">
+          <article class="case-card reveal">
+            <span class="card-label">Problem</span>
+            <h2>Support work slows down when messages, owners, and priorities are scattered.</h2>
+            <p>
+              Small teams can answer quickly at first, but as channels grow,
+              missed handoffs and unclear priorities make response quality hard
+              to maintain.
+            </p>
+            <ul class="check-list">
+              <li>Customer messages are split across email and forms.</li>
+              <li>Priority conversations are easy to miss.</li>
+              <li>Repeated answers take more time than they should.</li>
+            </ul>
+          </article>
+          <article class="case-card reveal reveal-delay">
+            <span class="card-label">Solution</span>
+            <h2>QueuePilot presents one calm support workspace for daily reply work.</h2>
+            <p>
+              This concept landing page explains the product with a direct
+              message, visible CTA hierarchy, feature cards, pricing, FAQ, and a
+              final conversion section.
+            </p>
+            <div class="solution-mini-grid">
+              <span>Shared inbox</span>
+              <span>Saved replies</span>
+              <span>SLA signals</span>
+              <span>Team ownership</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Features</p>
+            <h2>A complete feature section for scanning value quickly.</h2>
+          </div>
+          <div class="benefit-grid saas-feature-grid">
+            <article class="mini-card reveal">
+              <h3>Unified Inbox</h3>
+              <p>Bring support messages into one simple queue so teams can work from the same view.</p>
+            </article>
+            <article class="mini-card reveal">
+              <h3>Saved Replies</h3>
+              <p>Reuse common answers while keeping customer communication clear and consistent.</p>
+            </article>
+            <article class="mini-card reveal">
+              <h3>SLA Signals</h3>
+              <p>Make urgent conversations easier to notice before they are missed.</p>
+            </article>
+            <article class="mini-card reveal">
+              <h3>Owner Assignment</h3>
+              <p>Show who is responsible for each thread and reduce duplicate replies.</p>
+            </article>
+            <article class="mini-card reveal">
+              <h3>Simple Reporting</h3>
+              <p>Surface response time, queue health, and support volume in a compact view.</p>
+            </article>
+            <article class="mini-card reveal">
+              <h3>Clean Settings</h3>
+              <p>Keep workflow rules readable so setup feels approachable for small teams.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="how-it-works">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">How It Works</p>
+            <h2>A simple onboarding story with clear next steps.</h2>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card reveal">
+              <span>01</span>
+              <h3>Connect channels</h3>
+              <p>Connect email, web forms, and customer questions into one support queue.</p>
+            </article>
+            <article class="step-card reveal">
+              <span>02</span>
+              <h3>Organize tickets</h3>
+              <p>Use ownership, labels, and priority rules to reduce manual sorting.</p>
+            </article>
+            <article class="step-card reveal">
+              <span>03</span>
+              <h3>Reply faster</h3>
+              <p>Use saved replies and queue health signals to keep daily support focused.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container testimonial-panel reveal">
+          <div>
+            <p class="eyebrow">Social Proof Concept</p>
+            <h2>Designed to include trust without pretending this is a real customer quote.</h2>
+          </div>
+          <blockquote>
+            "This testimonial block is placeholder concept copy showing where a
+            real SaaS landing page could place customer proof after validation."
+          </blockquote>
+          <div class="testimonial-meta">
+            <span>Fictional beta team</span>
+            <span>Practice landing page demo</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pricing">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Pricing</p>
+            <h2>Pricing cards with clear plan hierarchy.</h2>
+          </div>
+          <div class="pricing-grid">
+            <article class="pricing-card reveal">
+              <h3>Starter</h3>
+              <p class="price">$19<span>/mo</span></p>
+              <ul class="check-list">
+                <li>Shared inbox concept</li>
+                <li>Basic labels</li>
+                <li>Email support</li>
+              </ul>
+              <button class="button button-ghost" type="button" data-cta-feedback="Starter plan selected in this concept demo.">Choose Starter</button>
+            </article>
+            <article class="pricing-card pricing-card-featured reveal">
+              <span class="plan-badge">Most useful</span>
+              <h3>Growth</h3>
+              <p class="price">$49<span>/mo</span></p>
+              <ul class="check-list">
+                <li>Saved replies</li>
+                <li>SLA dashboard</li>
+                <li>Team assignments</li>
+              </ul>
+              <button class="button button-primary" type="button" data-cta-feedback="Growth plan selected in this concept demo.">Choose Growth</button>
+            </article>
+            <article class="pricing-card reveal">
+              <h3>Team</h3>
+              <p class="price">$99<span>/mo</span></p>
+              <ul class="check-list">
+                <li>Advanced routing</li>
+                <li>Priority view</li>
+                <li>Team reporting</li>
+              </ul>
+              <button class="button button-ghost" type="button" data-cta-feedback="Team plan selected in this concept demo.">Choose Team</button>
+            </article>
+          </div>
+          <p class="cart-feedback saas-plan-feedback" data-global-feedback aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="faq">
+        <div class="container faq-wrap reveal">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>Common buyer questions in accordion format.</h2>
+          </div>
+          <div class="accordion" data-accordion>
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false">Is QueuePilot a real product?</button>
+              <div class="accordion-panel">
+                <p>No. It is a fictional SaaS concept created for frontend portfolio practice.</p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false">What does this project demonstrate?</button>
+              <div class="accordion-panel">
+                <p>It demonstrates landing page structure, responsive grids, feature cards, pricing cards, CTA hierarchy, and FAQ behavior.</p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false">Was any framework used?</button>
+              <div class="accordion-panel">
+                <p>No. This page uses only HTML, CSS, and vanilla JavaScript.</p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false">Can this layout be adapted for a real SaaS site?</button>
+              <div class="accordion-panel">
+                <p>Yes. The static sections are structured so they could be adapted into a real frontend or CMS template with real product copy and proof.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section">
+        <div class="container contact-panel reveal">
+          <div>
+            <p class="eyebrow">Final CTA</p>
+            <h2>A complete static SaaS page demo for the portfolio.</h2>
+            <p>This practice project shows a clean landing page flow, responsive layout, reusable cards, and small JavaScript interactions.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary" href="./index.html#contact">Contact</a>
+            <a class="button button-secondary" href="./index.html#projects">Back to Portfolio</a>
+            <a class="button button-ghost" href="#pricing">Review Plans</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Practice SaaS landing page concept by Nguyen Thanh Dat</p>
+        <a href="./index.html#projects">Back to projects</a>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

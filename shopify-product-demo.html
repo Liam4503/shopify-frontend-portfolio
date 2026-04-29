@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Practice Shopify-style product page demo by Nguyen Thanh Dat with gallery, variants, quantity selector, FAQ accordion, trust badges, and mobile sticky add to cart."
+    />
+    <title>Shopify Product Page Demo | Nguyen Thanh Dat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="has-mobile-cart">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="./index.html#home" aria-label="Back to portfolio home">
+          <span class="brand-mark">ND</span>
+          <span>
+            <strong>Nguyen Thanh Dat</strong>
+            <small>Product Page Demo</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+          <a href="./shopify-product-page.html">Case Study</a>
+          <a href="./index.html#projects">Projects</a>
+          <a href="./index.html#contact">Contact</a>
+          <a class="nav-button" href="./index.html">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="product-demo section" data-product-gallery>
+        <div class="container">
+          <p class="eyebrow reveal">Practice / Concept Demo</p>
+          <div class="product-layout">
+            <div class="product-media reveal">
+              <div
+                class="product-main-image"
+                data-main-image
+                data-product-tone="forest"
+                style="background: linear-gradient(135deg, #f3e5d1, #8aa078);"
+                aria-live="polite"
+              >
+                <div class="product-mockup" aria-hidden="true">
+                  <svg class="pack-illustration" viewBox="0 0 360 420" role="img">
+                    <defs>
+                      <linearGradient id="packHighlight" x1="88" y1="42" x2="274" y2="386" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#fffaf1" stop-opacity="0.34" />
+                        <stop offset="1" stop-color="#10241d" stop-opacity="0.12" />
+                      </linearGradient>
+                    </defs>
+                    <path class="pack-shadow" d="M73 376c34 17 178 19 214 1 13-7 13-22 0-29-35-18-178-18-214-1-13 7-13 22 0 29Z" />
+                    <path class="pack-strap pack-strap-left" d="M107 118c-30 35-45 89-41 155 2 43 20 77 44 94 13 9 28-5 20-18-16-26-26-56-28-91-3-55 10-98 36-129 9-11-21-22-31-11Z" />
+                    <path class="pack-strap pack-strap-right" d="M253 118c30 35 45 89 41 155-2 43-20 77-44 94-13 9-28-5-20-18 16-26 26-56 28-91 3-55-10-98-36-129-9-11 21-22 31-11Z" />
+                    <path class="pack-body" d="M111 72c16-22 43-34 69-34s53 12 69 34c23 32 34 89 34 170 0 63-12 105-35 126-18 17-42 25-68 25s-50-8-68-25c-23-21-35-63-35-126 0-81 11-138 34-170Z" />
+                    <path class="pack-panel" d="M110 225c17 17 42 25 70 25s53-8 70-25v68c0 45-28 70-70 70s-70-25-70-70v-68Z" />
+                    <path class="pack-pocket" d="M128 256c13 8 31 12 52 12s39-4 52-12v45c0 26-21 42-52 42s-52-16-52-42v-45Z" />
+                    <path class="pack-lid" d="M112 81c16-27 42-42 68-42s52 15 68 42c-17 17-41 27-68 27s-51-10-68-27Z" />
+                    <path class="pack-highlight" d="M119 86c17-23 39-35 61-35s44 12 61 35c17 30 25 79 25 148 0 56-10 92-29 110-15 14-35 21-57 21s-42-7-57-21c-19-18-29-54-29-110 0-69 8-118 25-148Z" />
+                    <path class="pack-zip" d="M124 222c37 21 75 21 112 0" />
+                    <path class="pack-zip" d="M140 282c26 13 54 13 80 0" />
+                    <circle class="pack-rivet" cx="140" cy="126" r="5" />
+                    <circle class="pack-rivet" cx="220" cy="126" r="5" />
+                    <rect class="pack-handle" x="148" y="23" width="64" height="24" rx="12" />
+                  </svg>
+                </div>
+                <span data-main-label>Everyday Canvas Pack - Forest</span>
+              </div>
+
+              <div class="thumbnail-row" aria-label="Product image thumbnails">
+                <button
+                  class="thumbnail is-active"
+                  type="button"
+                  data-thumb
+                  data-label="Everyday Canvas Pack - Forest"
+                  data-gradient="linear-gradient(135deg, #f3e5d1, #8aa078)"
+                  data-tone="forest"
+                  aria-label="Show forest color product image"
+                >
+                  <span class="thumb-swatch thumb-forest"></span>
+                </button>
+                <button
+                  class="thumbnail"
+                  type="button"
+                  data-thumb
+                  data-label="Everyday Canvas Pack - Sand"
+                  data-gradient="linear-gradient(135deg, #f1d7a9, #c7834d)"
+                  data-tone="sand"
+                  aria-label="Show sand color product image"
+                >
+                  <span class="thumb-swatch thumb-sand"></span>
+                </button>
+                <button
+                  class="thumbnail"
+                  type="button"
+                  data-thumb
+                  data-label="Everyday Canvas Pack - Charcoal"
+                  data-gradient="linear-gradient(135deg, #d4d1c9, #27312d)"
+                  data-tone="charcoal"
+                  aria-label="Show charcoal color product image"
+                >
+                  <span class="thumb-swatch thumb-charcoal"></span>
+                </button>
+              </div>
+
+              <div class="before-after-card">
+                <h2>Before / After Improvement</h2>
+                <div class="comparison-mini">
+                  <p><strong>Before:</strong> Product image and CTA feel disconnected on mobile.</p>
+                  <p><strong>After:</strong> Gallery, price, CTA, trust badges, and FAQs support one clear buying flow.</p>
+                </div>
+              </div>
+            </div>
+
+            <form class="product-summary reveal reveal-delay" id="product-form" data-cart-form>
+              <span class="product-label">Demo Store Product</span>
+              <h1>Everyday Canvas Pack</h1>
+              <div class="rating-row" aria-label="Rating summary">
+                <span class="stars">5/5</span>
+                <span>4.8 rating from 126 demo reviews</span>
+              </div>
+              <p class="product-price">$49.00</p>
+              <p class="product-description">
+                A lightweight everyday backpack concept used to demonstrate a
+                practical Shopify product page layout with clearer benefits,
+                trust signals, responsive structure, and basic conversion
+                improvements.
+              </p>
+
+              <div class="variant-group" aria-label="Select color">
+                <p class="field-label">Color</p>
+                <div class="variant-options">
+                  <button class="variant-button is-selected" type="button" data-variant>Forest</button>
+                  <button class="variant-button" type="button" data-variant>Sand</button>
+                  <button class="variant-button" type="button" data-variant>Charcoal</button>
+                </div>
+              </div>
+
+              <div class="quantity-row" data-quantity>
+                <p class="field-label">Quantity</p>
+                <div class="quantity-control">
+                  <button type="button" data-quantity-minus aria-label="Decrease quantity">-</button>
+                  <span data-quantity-value>1</span>
+                  <button type="button" data-quantity-plus aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+
+              <div class="purchase-actions">
+                <button class="button button-primary product-cart-button" type="submit">Add to Cart - $49.00</button>
+                <button class="button button-secondary product-buy-button" type="button" data-buy-now>Buy Now</button>
+              </div>
+              <p class="cart-feedback" data-cart-feedback aria-live="polite"></p>
+
+              <div class="trust-grid" aria-label="Trust badges">
+                <span>In stock</span>
+                <span>Free shipping over $50</span>
+                <span>30-day returns</span>
+                <span>Secure checkout</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Product Benefits</p>
+            <h2>Clear benefit blocks help customers scan faster.</h2>
+          </div>
+          <div class="benefit-grid">
+            <article class="mini-card reveal">
+              <h3>Organized Storage</h3>
+              <p>Benefit copy is short and specific so the buying reason is easy to understand.</p>
+            </article>
+            <article class="mini-card reveal">
+              <h3>Comfortable Carry</h3>
+              <p>Layout keeps important product details close to the purchase action.</p>
+            </article>
+            <article class="mini-card reveal">
+              <h3>Daily Durability</h3>
+              <p>Trust information supports the product story without overwhelming the page.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container product-info-grid">
+          <article class="case-card reveal">
+            <span class="card-label">Shipping</span>
+            <h2>Shipping and Returns</h2>
+            <ul class="check-list">
+              <li>Estimated delivery: 2-4 business days in this demo scenario.</li>
+              <li>Return note placed before checkout to reduce hesitation.</li>
+              <li>Policy copy is short, visible, and written in plain language.</li>
+            </ul>
+          </article>
+
+          <article class="case-card reveal reveal-delay">
+            <span class="card-label">Trust</span>
+            <h2>Related Trust Section</h2>
+            <ul class="check-list">
+              <li>Review summary sits close to the product title.</li>
+              <li>Trust badges are compact and scannable.</li>
+              <li>FAQ content answers common objections before checkout.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="container faq-wrap reveal">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>Accordion interaction for buyer questions.</h2>
+          </div>
+          <div class="accordion" data-accordion>
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false">Is this a real Shopify store?</button>
+              <div class="accordion-panel">
+                <p>No. This is a static practice demo created to show product page structure and frontend interactions.</p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false">What improvements does this demonstrate?</button>
+              <div class="accordion-panel">
+                <p>It demonstrates gallery behavior, variants, quantity controls, trust badges, mobile sticky CTA, and FAQ structure.</p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false">Could this be adapted to Shopify Liquid?</button>
+              <div class="accordion-panel">
+                <p>The static sections are designed to map to Shopify theme sections while I continue learning Liquid fundamentals.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="mobile-cart-bar" aria-label="Mobile add to cart shortcut">
+      <span>Everyday Canvas Pack</span>
+      <a class="button button-primary" href="#product-form">Add to Cart</a>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Practice product page demo by Nguyen Thanh Dat</p>
+        <a href="./index.html#projects">Back to projects</a>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

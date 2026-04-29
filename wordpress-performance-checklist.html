@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Practice WordPress security and performance checklist project by Nguyen Thanh Dat."
+    />
+    <title>WordPress Security & Performance Checklist | Nguyen Thanh Dat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="./index.html#home" aria-label="Back to portfolio home">
+          <span class="brand-mark">ND</span>
+          <span>
+            <strong>Nguyen Thanh Dat</strong>
+            <small>WordPress Checklist</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+          <a href="#security">Security</a>
+          <a href="#performance">Performance</a>
+          <a href="#tools">Tools</a>
+          <a class="nav-button" href="./index.html">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="case-hero section">
+        <div class="container case-hero-grid">
+          <div class="reveal">
+            <p class="eyebrow">Practice / Documentation Project</p>
+            <h1>WordPress Security &amp; Performance Checklist</h1>
+            <p class="hero-text">
+              A documentation-style portfolio project showing awareness of
+              secure redesign planning, plugin hygiene, backup routines, and
+              performance audit basics for small WordPress websites.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#security">View Checklist</a>
+              <a class="button button-ghost" href="./index.html#projects">Back to Home</a>
+            </div>
+          </div>
+          <aside class="metric-panel reveal reveal-delay">
+            <span class="metric-label">Checklist Areas</span>
+            <div class="metric-list">
+              <strong>Security</strong>
+              <strong>Performance</strong>
+              <strong>Backups</strong>
+              <strong>Maintenance</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="container two-column">
+          <article class="case-card reveal">
+            <span class="card-label">Overview</span>
+            <h2>Project Overview</h2>
+            <p>
+              This project connects my IT support background with website
+              maintenance thinking. It is not a live audit. It is a structured
+              checklist showing what I would review when helping with a safer,
+              cleaner WordPress redesign.
+            </p>
+          </article>
+          <article class="case-card reveal reveal-delay">
+            <span class="card-label">Problems</span>
+            <h2>Common WordPress Problems</h2>
+            <ul class="check-list">
+              <li>Too many inactive or overlapping plugins.</li>
+              <li>Outdated themes, plugins, or WordPress core files.</li>
+              <li>No clear backup and restore process.</li>
+              <li>Large images, heavy page builders, and unused scripts.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="security">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Security Checklist</p>
+            <h2>Basic hardening items to review.</h2>
+          </div>
+          <div class="checklist-grid">
+            <article class="mini-card reveal">
+              <h3>Updates</h3>
+              <p>Confirm WordPress core, active theme, and plugins are maintained and updated safely.</p>
+            </article>
+            <article class="mini-card reveal">
+              <h3>Access</h3>
+              <p>Review admin accounts, strong passwords, two-factor options, and least-privilege roles.</p>
+            </article>
+            <article class="mini-card reveal">
+              <h3>Backups</h3>
+              <p>Check backup frequency, storage location, and whether restore steps are documented.</p>
+            </article>
+            <article class="mini-card reveal">
+              <h3>Forms</h3>
+              <p>Confirm contact forms use spam protection and do not expose unnecessary data.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="performance">
+        <div class="container case-grid">
+          <article class="case-card reveal">
+            <span class="card-label">Performance</span>
+            <h2>Performance Checklist</h2>
+            <ul class="check-list">
+              <li>Compress large images and use suitable dimensions.</li>
+              <li>Review render-blocking CSS and JavaScript where possible.</li>
+              <li>Check lazy loading for below-the-fold images.</li>
+              <li>Review page builder sections that add weight without value.</li>
+              <li>Use PageSpeed Insights and Chrome DevTools for basic checks.</li>
+            </ul>
+          </article>
+          <article class="case-card reveal reveal-delay">
+            <span class="card-label">Plugin Hygiene</span>
+            <h2>Plugin / Theme Checklist</h2>
+            <ul class="check-list">
+              <li>Remove inactive plugins after confirming they are not needed.</li>
+              <li>Avoid duplicate plugins that solve the same problem.</li>
+              <li>Check last update date and compatibility before relying on a plugin.</li>
+              <li>Use a maintained theme and avoid editing theme core files directly.</li>
+              <li>Document important plugin settings before redesign work.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="comparison-card reveal">
+            <div class="section-heading">
+              <p class="eyebrow">Recommendations</p>
+              <h2>Before / After recommendation table.</h2>
+            </div>
+            <div class="comparison-table" role="table" aria-label="WordPress before and after recommendations">
+              <div class="comparison-row comparison-head" role="row">
+                <span role="columnheader">Before</span>
+                <span role="columnheader">After</span>
+              </div>
+              <div class="comparison-row" role="row">
+                <span role="cell">Many plugins installed without clear purpose.</span>
+                <span role="cell">Keep only necessary plugins and document what each one does.</span>
+              </div>
+              <div class="comparison-row" role="row">
+                <span role="cell">No clear backup routine before edits.</span>
+                <span role="cell">Create a backup checklist and test restore awareness before redesign.</span>
+              </div>
+              <div class="comparison-row" role="row">
+                <span role="cell">Large images uploaded directly from design tools.</span>
+                <span role="cell">Resize and compress images before upload, then test page speed.</span>
+              </div>
+              <div class="comparison-row" role="row">
+                <span role="cell">Admin access is shared or unclear.</span>
+                <span role="cell">Use named accounts, strong passwords, and appropriate roles.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="tools">
+        <div class="container case-grid">
+          <article class="case-card reveal">
+            <span class="card-label">Tools</span>
+            <h2>Tools / Checks Used</h2>
+            <ul class="check-list">
+              <li>PageSpeed Insights.</li>
+              <li>Chrome DevTools.</li>
+              <li>Plugin review checklist.</li>
+              <li>Backup checklist.</li>
+              <li>Basic hardening checklist.</li>
+            </ul>
+          </article>
+          <article class="case-card reveal reveal-delay">
+            <span class="card-label">Learning</span>
+            <h2>What I Learned</h2>
+            <p>
+              WordPress performance and security are connected to process, not
+              only visual redesign. A safer redesign needs update awareness,
+              plugin review, backup planning, image discipline, and clear notes
+              before making changes.
+            </p>
+            <a class="button button-primary" href="./index.html#projects">Back to Home</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Practice WordPress checklist by Nguyen Thanh Dat</p>
+        <a href="./index.html#contact">Contact</a>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

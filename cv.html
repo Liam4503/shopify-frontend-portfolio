@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="View the CV of Nguyen Thanh Dat directly in the browser, with options to open or download the PDF."
+    />
+    <title>Nguyen Thanh Dat - CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="./index.html#home" aria-label="Back to portfolio home">
+          <span class="brand-mark">ND</span>
+          <span>
+            <strong>Nguyen Thanh Dat</strong>
+            <small>CV Viewer</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+          <a href="./index.html#projects">Projects</a>
+          <a href="./index.html#skills">Skills</a>
+          <a href="./index.html#contact">Contact</a>
+          <a class="nav-button" href="./index.html">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section cv-section">
+        <div class="container">
+          <div class="cv-heading reveal">
+            <p class="eyebrow">Browser CV Viewer</p>
+            <h1>Nguyen Thanh Dat &mdash; CV</h1>
+            <p class="hero-text">
+              Recruiters can view the PDF directly here, then open it in a new
+              tab or download a copy if needed.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="./Nguyen_Thanh_Dat_CV.pdf" target="_blank" rel="noreferrer">Open CV in New Tab</a>
+              <a class="button button-secondary" href="./Nguyen_Thanh_Dat_CV.pdf" download>Download CV</a>
+              <a class="button button-ghost" href="./index.html">Back to Home</a>
+            </div>
+          </div>
+
+          <div class="cv-viewer reveal reveal-delay">
+            <object data="./Nguyen_Thanh_Dat_CV.pdf" type="application/pdf" aria-label="Nguyen Thanh Dat CV PDF viewer">
+              <p>
+                If the CV does not display,
+                <a href="./Nguyen_Thanh_Dat_CV.pdf" target="_blank" rel="noreferrer">open</a>
+                or
+                <a href="./Nguyen_Thanh_Dat_CV.pdf" download>download the PDF here</a>.
+              </p>
+            </object>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Nguyen Thanh Dat - CV viewer</p>
+        <a href="./index.html">Back to home</a>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
