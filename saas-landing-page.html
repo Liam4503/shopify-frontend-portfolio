@@ -75,7 +75,7 @@
     </header>
 
     <main id="main">
-      <section class="saas-hero section">
+      <section class="saas-hero section" id="demo-preview">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
             <p class="eyebrow">Practice / Concept Project</p>
@@ -163,6 +163,25 @@
               </p>
             </article>
             <article class="case-card reveal">
+              <span class="card-label">My Role</span>
+              <h2>Practice concept created by me.</h2>
+              <p>
+                I created the fictional product idea, wrote the landing page
+                copy, designed the section order, built the static frontend, and
+                documented the layout and conversion decisions.
+              </p>
+            </article>
+            <article class="case-card reveal reveal-delay">
+              <span class="card-label">Constraints</span>
+              <h2>Static SaaS concept with no real product backend.</h2>
+              <ul class="check-list">
+                <li>Static HTML/CSS/JavaScript only.</li>
+                <li>No real SaaS app, authentication, database, or analytics.</li>
+                <li>No real customer logos, testimonials, or pricing data.</li>
+                <li>Created to demonstrate frontend landing page thinking.</li>
+              </ul>
+            </article>
+            <article class="case-card reveal">
               <span class="card-label">Goal</span>
               <h2>Build a complete landing page flow using static frontend code.</h2>
               <p>
@@ -193,6 +212,17 @@
               </ul>
             </article>
             <article class="case-card reveal reveal-delay">
+              <span class="card-label">Key Layout Decisions</span>
+              <h2>The page moves from message to proof to action.</h2>
+              <ul class="check-list">
+                <li>The hero focuses on one clear product category and two CTAs.</li>
+                <li>The dashboard preview makes the SaaS context visible without external images.</li>
+                <li>Feature cards are placed before pricing so value is understood before comparison.</li>
+                <li>Pricing cards use one highlighted plan to make hierarchy easier to scan.</li>
+                <li>The waitlist/demo CTA gives the page a realistic conversion path for an early SaaS concept.</li>
+              </ul>
+            </article>
+            <article class="case-card reveal">
               <span class="card-label">Responsive / UX Notes</span>
               <h2>Designed to stay readable across common screen sizes.</h2>
               <ul class="check-list">
@@ -202,7 +232,33 @@
                 <li>Navigation links use same-page anchors for direct review.</li>
               </ul>
             </article>
-            <article class="case-card reveal">
+            <article class="case-card reveal reveal-delay">
+              <span class="card-label">Performance / Accessibility Notes</span>
+              <h2>Lightweight static page with accessible interaction basics.</h2>
+              <ul class="check-list">
+                <li>Semantic headings, sections, buttons, and descriptive links.</li>
+                <li>No framework, app bundle, or external images.</li>
+                <li>FAQ buttons expose expanded state with aria attributes.</li>
+                <li>CTA feedback uses aria-live text for visible demo state.</li>
+                <li>Readable contrast, spacing, and focus states are handled in shared CSS.</li>
+              </ul>
+            </article>
+            <article class="case-card reveal" id="testing">
+              <span class="card-label">Testing Checklist</span>
+              <h2>Checks used to review the concept page.</h2>
+              <ul class="check-list">
+                <li>Desktop layout checked.</li>
+                <li>Tablet layout checked.</li>
+                <li>Mobile layout checked.</li>
+                <li>CTA visibility checked.</li>
+                <li>Navigation links checked.</li>
+                <li>Text readability checked.</li>
+                <li>No horizontal overflow.</li>
+                <li>Basic accessibility reviewed.</li>
+                <li>Local links tested.</li>
+              </ul>
+            </article>
+            <article class="case-card reveal reveal-delay">
               <span class="card-label">What I Learned</span>
               <h2>SaaS pages need both structure and restraint.</h2>
               <p>
@@ -211,9 +267,21 @@
                 CTA clarity, and keeping visual details useful instead of
                 decorative.
               </p>
+            </article>
+            <article class="case-card reveal">
+              <span class="card-label">Future Improvements / Links</span>
+              <h2>How this could become closer to a production SaaS page.</h2>
+              <ul class="check-list">
+                <li>Add real customer proof after validation.</li>
+                <li>Connect the waitlist CTA to a real form or backend.</li>
+                <li>Add Lighthouse performance results for the deployed page.</li>
+                <li>Improve accessibility testing with keyboard and screen reader checks.</li>
+                <li>Add analytics events for CTA and pricing interactions.</li>
+              </ul>
               <div class="card-actions">
-                <a class="button button-primary" href="#pricing">View SaaS Pricing Demo</a>
-                <a class="button button-ghost" href="./index.html#projects">Back to Projects</a>
+                <a class="button button-primary" href="#pricing">Live Demo</a>
+                <a class="button button-ghost" href="./index.html#projects">Back to Portfolio</a>
+                <a class="button button-ghost" href="https://github.com/Liam4503" target="_blank" rel="noreferrer">GitHub Profile</a>
               </div>
             </article>
           </div>
