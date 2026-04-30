@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://liam4503.github.io/shopify-frontend-portfolio/sitemap.xml

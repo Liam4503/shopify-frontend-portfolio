@@ -1,14 +1,14 @@
-# Nguyen Thanh Dat - Frontend / Shopify Developer Portfolio
+# Nguyen Thanh Dat - Junior Frontend / Shopify Developer Portfolio
 
-Static portfolio website for Nguyen Thanh Dat, targeting remote Frontend / Shopify Developer fresher or junior roles. The project is built with plain HTML, CSS, and vanilla JavaScript so it can run directly on GitHub Pages without a build step.
+Static professional portfolio for Nguyen Thanh Dat, positioned for junior frontend, WordPress, Shopify, website collaboration, ecommerce, SaaS landing page, and small freelance/trial-based opportunities.
 
 Live demo placeholder: <https://liam4503.github.io/shopify-frontend-portfolio/>
 
-## Candidate
+## Candidate Positioning
 
 - Name: Nguyen Thanh Dat
-- Target role: Frontend / Shopify Developer
-- Level: Fresher / Junior
+- Target roles: Junior Frontend / Shopify Developer, Junior WordPress / Shopify Developer
+- Availability: Junior roles, website collaboration, remote small tasks, paid trial tasks
 - Location: Ho Chi Minh City, Vietnam
 - GitHub: <https://github.com/Liam4503>
 - Email: <ngthanhdatt2003@gmail.com>
@@ -18,32 +18,54 @@ Live demo placeholder: <https://liam4503.github.io/shopify-frontend-portfolio/>
 - HTML5
 - CSS3
 - Vanilla JavaScript
-- GitHub Pages static hosting
+- Static GitHub Pages hosting
 
-## Pages Included
+## Portfolio Structure
 
-- `index.html` - Main portfolio homepage.
-- `shopify-product-page.html` - Shopify Product Page Improvement Concept case study.
-- `shopify-product-demo.html` - Shopify-style product page demo with gallery, variants, quantity selector, FAQ, and mobile sticky CTA.
-- `saas-landing-page.html` - Responsive SaaS landing page concept.
-- `wordpress-performance-checklist.html` - WordPress security and performance checklist project.
+- `index.html` - Main service-oriented portfolio homepage.
+- `shopify-product-page.html` - Shopify product page case study.
+- `shopify-product-demo.html` - Static Shopify-style product page live demo.
+- `saas-landing-page.html` - SaaS landing page concept with case-study details.
+- `wordpress-performance-checklist.html` - WordPress performance/support checklist case study.
+- `ecommerce-content-website.html` - Ecommerce/content website demo and case study.
+- `cv.html` - Browser CV viewer.
+- `Nguyen_Thanh_Dat_CV.pdf` - CV PDF file.
 - `styles.css` - Main shared stylesheet.
-- `style.css` - Compatibility import that points to `styles.css`.
-- `script.js` - Shared JavaScript for navigation, smooth scrolling, FAQ accordions, product demo interactions, and CTA feedback.
+- `style.css` - Compatibility import for `styles.css`.
+- `script.js` - Shared JavaScript for navigation, smooth scrolling, accordions, demo interactions, and CTA feedback.
+- `robots.txt` - Search crawler instructions with sitemap reference.
+- `sitemap.xml` - Public page sitemap for GitHub Pages.
+- `assets/og-image.png` - Open Graph and Twitter card preview image.
+
+## Main Sections
+
+- Hero with project, CV, GitHub, download, and email actions.
+- Featured Projects / Case Studies.
+- Services.
+- Scope-based Pricing / Collaboration.
+- Working Process.
+- Skills grouped by Frontend, Shopify, WordPress, and Support Mindset.
+- About.
+- Contact and availability.
+
+## Services Presented
+
+- Responsive landing page build.
+- Shopify product page improvements.
+- Ecommerce website sections.
+- SaaS landing page sections.
+- WordPress content/performance support.
+- Responsive bug fixes.
+- Small frontend cleanup tasks.
 
 ## Project Highlights
 
-- Responsive homepage for a junior Frontend / Shopify Developer profile.
-- Practical Shopify product page demo using only static frontend code.
-- Case study page explaining CRO, trust signals, mobile layout, and speed basics.
-- SaaS landing page concept with feature cards, pricing cards, FAQ, and CTA flow.
-- WordPress checklist page showing security, plugin hygiene, backup, and performance awareness.
-- Consistent visual identity across all pages.
+- Shopify product page demo with gallery, variants, quantity controls, trust badges, FAQ, and mobile sticky CTA.
+- SaaS landing page concept with hero, dashboard preview, features, process, pricing, FAQ, and CTA sections.
+- WordPress checklist showing plugin hygiene, backups, security awareness, content layout, and performance basics.
+- Ecommerce/content demo showing category cards, product highlights, editorial content, trust strip, and responsive homepage sections.
+- Honest junior positioning with clear practice/concept labels.
 - No backend, database, framework, or paid dependency required.
-
-## Honesty Note
-
-The projects in this portfolio are practice/concept projects created to demonstrate frontend structure, responsive design, and Shopify/WordPress awareness.
 
 ## Run Locally
 
@@ -55,7 +77,7 @@ No installation is required.
 
 ## Deploy With GitHub Pages
 
-1. Create a GitHub repository named `shopify-frontend-portfolio`.
+1. Create or use the GitHub repository for this portfolio.
 2. Push all project files to the repository root.
 3. In GitHub, open repository `Settings`.
 4. Go to `Pages`.
@@ -67,6 +89,6 @@ No installation is required.
 
 - Confirm `Nguyen_Thanh_Dat_CV.pdf` is the final resume file.
 - Test the homepage and all project pages on mobile and desktop widths.
-- Check all project links from `index.html`.
+- Check all homepage project links and case-study links.
 - Confirm contact email and GitHub link are correct.
-- Keep the project labels as practice, concept, demo, or documentation projects.
+- Keep project labels honest as practice, concept, demo, documentation, or case-study work.

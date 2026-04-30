@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Practice Shopify-style product page demo by Nguyen Thanh Dat with gallery, variants, quantity selector, FAQ accordion, trust badges, and mobile sticky add to cart."
+      content="Static Shopify-style product page demo by Nguyen Thanh Dat with product gallery, variants, quantity controls, trust badges, FAQ accordion, and mobile add-to-cart flow."
     />
     <title>Shopify Product Page Demo | Nguyen Thanh Dat</title>
+    <link rel="canonical" href="https://liam4503.github.io/shopify-frontend-portfolio/shopify-product-demo.html" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Nguyen Thanh Dat" />
+    <meta property="og:title" content="Shopify Product Page Demo | Nguyen Thanh Dat" />
+    <meta
+      property="og:description"
+      content="Static Shopify-style product page demo by Nguyen Thanh Dat with product gallery, variants, quantity controls, trust badges, FAQ accordion, and mobile add-to-cart flow."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://liam4503.github.io/shopify-frontend-portfolio/shopify-product-demo.html" />
+    <meta property="og:image" content="https://liam4503.github.io/shopify-frontend-portfolio/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Nguyen Thanh Dat Junior Frontend and Shopify Developer portfolio preview" />
+    <meta property="og:site_name" content="Nguyen Thanh Dat Portfolio" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shopify Product Page Demo | Nguyen Thanh Dat" />
+    <meta
+      name="twitter:description"
+      content="Static Shopify-style product page demo by Nguyen Thanh Dat with product gallery, variants, quantity controls, trust badges, FAQ accordion, and mobile add-to-cart flow."
+    />
+    <meta name="twitter:image" content="https://liam4503.github.io/shopify-frontend-portfolio/assets/og-image.png" />
+    <meta name="twitter:image:alt" content="Nguyen Thanh Dat Junior Frontend and Shopify Developer portfolio preview" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -55,6 +78,53 @@
         <div class="container">
           <p class="eyebrow reveal">Practice / Concept Demo</p>
           <div class="product-layout">
+            <form class="product-summary reveal reveal-delay" id="product-form" data-cart-form>
+              <span class="product-label">Demo Store Product</span>
+              <h1>Everyday Canvas Pack</h1>
+              <div class="rating-row" aria-label="Rating summary">
+                <span class="stars">5/5</span>
+                <span>4.8 rating from 126 demo reviews</span>
+              </div>
+              <p class="product-price">$49.00</p>
+              <p class="product-description">
+                A lightweight everyday backpack concept used to demonstrate a
+                practical Shopify product page layout with clearer benefits,
+                trust signals, responsive structure, and basic conversion
+                improvements.
+              </p>
+
+              <div class="variant-group" aria-label="Select color">
+                <p class="field-label">Color</p>
+                <div class="variant-options">
+                  <button class="variant-button is-selected" type="button" data-variant>Forest</button>
+                  <button class="variant-button" type="button" data-variant>Sand</button>
+                  <button class="variant-button" type="button" data-variant>Charcoal</button>
+                </div>
+              </div>
+
+              <div class="quantity-row" data-quantity>
+                <p class="field-label">Quantity</p>
+                <div class="quantity-control">
+                  <button type="button" data-quantity-minus aria-label="Decrease quantity">-</button>
+                  <span data-quantity-value>1</span>
+                  <button type="button" data-quantity-plus aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+
+              <div class="purchase-actions">
+                <button class="button button-primary product-cart-button" type="submit">Add to Cart - $49.00</button>
+                <button class="button button-secondary product-buy-button" type="button" data-buy-now>Buy Now</button>
+              </div>
+              <p class="cart-feedback" data-cart-feedback aria-live="polite"></p>
+
+              <div class="trust-grid" aria-label="Trust badges">
+                <span>In stock</span>
+                <span>Free shipping over $50</span>
+                <span>30-day returns</span>
+                <span>Secure checkout</span>
+              </div>
+            </form>
+
             <div class="product-media reveal">
               <div
                 class="product-main-image"
@@ -64,7 +134,8 @@
                 aria-live="polite"
               >
                 <div class="product-mockup" aria-hidden="true">
-                  <svg class="pack-illustration" viewBox="0 0 360 420" role="img">
+                  <svg class="pack-illustration" viewBox="0 0 360 420" role="img" aria-labelledby="pack-illustration-title">
+                    <title id="pack-illustration-title">Illustration of the Everyday Canvas Pack product</title>
                     <defs>
                       <linearGradient id="packHighlight" x1="88" y1="42" x2="274" y2="386" gradientUnits="userSpaceOnUse">
                         <stop stop-color="#fffaf1" stop-opacity="0.34" />
@@ -133,53 +204,6 @@
                 </div>
               </div>
             </div>
-
-            <form class="product-summary reveal reveal-delay" id="product-form" data-cart-form>
-              <span class="product-label">Demo Store Product</span>
-              <h1>Everyday Canvas Pack</h1>
-              <div class="rating-row" aria-label="Rating summary">
-                <span class="stars">5/5</span>
-                <span>4.8 rating from 126 demo reviews</span>
-              </div>
-              <p class="product-price">$49.00</p>
-              <p class="product-description">
-                A lightweight everyday backpack concept used to demonstrate a
-                practical Shopify product page layout with clearer benefits,
-                trust signals, responsive structure, and basic conversion
-                improvements.
-              </p>
-
-              <div class="variant-group" aria-label="Select color">
-                <p class="field-label">Color</p>
-                <div class="variant-options">
-                  <button class="variant-button is-selected" type="button" data-variant>Forest</button>
-                  <button class="variant-button" type="button" data-variant>Sand</button>
-                  <button class="variant-button" type="button" data-variant>Charcoal</button>
-                </div>
-              </div>
-
-              <div class="quantity-row" data-quantity>
-                <p class="field-label">Quantity</p>
-                <div class="quantity-control">
-                  <button type="button" data-quantity-minus aria-label="Decrease quantity">-</button>
-                  <span data-quantity-value>1</span>
-                  <button type="button" data-quantity-plus aria-label="Increase quantity">+</button>
-                </div>
-              </div>
-
-              <div class="purchase-actions">
-                <button class="button button-primary product-cart-button" type="submit">Add to Cart - $49.00</button>
-                <button class="button button-secondary product-buy-button" type="button" data-buy-now>Buy Now</button>
-              </div>
-              <p class="cart-feedback" data-cart-feedback aria-live="polite"></p>
-
-              <div class="trust-grid" aria-label="Trust badges">
-                <span>In stock</span>
-                <span>Free shipping over $50</span>
-                <span>30-day returns</span>
-                <span>Secure checkout</span>
-              </div>
-            </form>
           </div>
         </div>
       </section>
